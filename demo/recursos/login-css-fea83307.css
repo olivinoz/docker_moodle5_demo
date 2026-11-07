@@ -1,0 +1,43 @@
+/* Selector de idioma compacto */
+.gzlang{position:absolute;top:16px;right:20px;z-index:20;display:flex;font:600 12px "IBM Plex Mono",monospace;letter-spacing:.08em}
+.gzlang a{padding:4px 9px;border:2px solid #14232F;color:#14232F;text-decoration:none;background:transparent}
+.gzlang a+a{border-left:0}
+.gzlang a:hover{background:#A0BEC6;color:#14232F}
+.gzlang a[aria-current]{background:#14232F;color:#F2EEE3}
+.path-login .login-languagemenu{display:none!important}
+/* Registro: dos columnas agrupadas por tema */
+#page-login-signup .login-container,#page-login-signup .login-wrapper,#page-login-signup .loginform{max-width:760px!important;width:100%}
+#page-login-signup form.mform{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px}
+#page-login-signup form.mform>.fitem{margin:0!important;display:block;min-width:0}
+#page-login-signup form.mform>.fitem>[class*=col-md-]{width:100%;max-width:100%;padding-left:0;padding-right:0}
+#page-login-signup form.mform input.form-control,#page-login-signup form.mform select{width:100%;max-width:100%}
+#page-login-signup form.mform>#fitem_id_passwordpolicyinfo{grid-column:1/-1;font-size:13px;margin-top:-8px!important}
+#fitem_id_passwordpolicyinfo>.col-form-label{display:none!important}
+#page-login-signup form.mform>*{order:20}
+#page-login-signup form.mform>[id^=fitem_id_firstname]{order:1}
+#page-login-signup form.mform>#fitem_id_lastname{order:2}
+#page-login-signup form.mform>#fitem_id_email{order:3}
+#page-login-signup form.mform>#fitem_id_email2{order:4}
+#page-login-signup form.mform>#fitem_id_username{order:5}
+#page-login-signup form.mform>#fitem_id_password{order:6}
+#page-login-signup form.mform>#fitem_id_passwordpolicyinfo{order:7}
+#page-login-signup form.mform>#fitem_id_city{order:8}
+#page-login-signup form.mform>#fitem_id_country{order:9}
+#page-login-signup form.mform>[id^=fgroup_id_buttonar]{grid-column:1/-1}
+@media (max-width:640px){#page-login-signup form.mform{grid-template-columns:minmax(0,1fr)}}
+.gzlang{border:0!important;padding:0!important;background:transparent!important;box-shadow:none!important;gap:0}
+.gzlang a{margin:0!important;line-height:1.4;outline:0}
+#page-login-signup form.mform select{min-height:48px;height:48px}
+#page-login-signup .login-layout-right-content,#page-login-signup .login-layout-right,#page-login-signup #region-main,#page-login-signup .login-container>*{max-width:760px!important;width:100%!important}
+#page-login-signup .login-layout-right{flex:0 0 100%!important}
+#page-login-signup .login-layout-right-content,#page-login-signup .login-container{margin-left:auto!important;margin-right:auto!important}
+#page-login-signup .login-layout-right{max-width:100%!important;width:100%!important;margin:0!important}
+#page-login-signup #region-main,#page-login-signup .login-container>*{margin-left:auto!important;margin-right:auto!important}
+.gzlang{gap:0!important}
+#page-login-signup form.mform{box-sizing:border-box;width:100%;margin:0;padding:0}
+@media (max-width:640px){#page-login-signup .login-layout-right{padding:72px 16px 32px!important}#page-login-signup .login-container>*{padding-left:0!important;padding-right:0!important}}
+.gzback{position:absolute;top:16px;left:20px;z-index:20;padding:4px 0;font:600 13px "IBM Plex Mono",monospace;color:#14232F;text-decoration:none}
+.gzback:hover{color:#0F719F;text-decoration:underline}
+/* Acceso: fondo binario/WKT/WKB como imagen estática (se genera una vez; no se dibuja en el navegador) */
+#page-login-index{background:#F2EEE3 url("login-fondo-webp-ee4195ce.webp") center/cover no-repeat fixed}
+#page-login-index #page,#page-login-index #page-content,#page-login-index .login-layout-right,#page-login-index #page-wrapper,#page-login-index #topofscroll,#page-login-index .main-inner,#page-login-index #region-main,#page-login-index #region-main-box{background:transparent!important}
